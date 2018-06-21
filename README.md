@@ -1,2 +1,2 @@
-# irrel-api
+# Irrel API
 Irrel API
