@@ -1,3 +1,3 @@
 <?php
 
-$app->get('/v1/group-checker/{steamId}', 'steamGroupController:check');
+$app->get('/v1/group-checker/{steamId}', 'B3none\\Irrel\\Controller\\GroupCheck\\GroupCheckerController::check');

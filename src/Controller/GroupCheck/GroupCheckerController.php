@@ -1,12 +1,12 @@
 <?php
 
-namespace B3none\Irrel\Controller;
+namespace B3none\Irrel\Controller\GroupCheck;
 
-use B3none\Irrel\Silex\Application;
 use B3none\SteamGroupChecker\Client as GroupChecker;
 use B3none\SteamIDConverter\Client as IDConverter;
+use Silex\Application;
 
-class SteamGroupController
+class GroupCheckerController
 {
     /**
      * @var GroupChecker
@@ -19,28 +19,20 @@ class SteamGroupController
     protected $idConverter;
 
     /**
-     * @var Application
+     * GroupCheckerController constructor.
      */
-    protected $app;
-
-    /**
-     * SteamGroupController constructor.
-     * @param Application $app
-     * @param IDConverter $idConverter
-     * @param GroupChecker $groupChecker
-     */
-    public function __construct(Application $app, IDConverter $idConverter, GroupChecker $groupChecker)
+    public function __construct()
     {
-        $this->groupChecker = $groupChecker;
-        $this->idConverter = $idConverter;
-        $this->app = $app;
+        $this->groupChecker = GroupChecker::create();
+        $this->idConverter = IDConverter::create();
     }
 
     /**
+     * @param Application $app
      * @param string $steamId
      * @return mixed
      */
-    public function check(string $steamId)
+    public function check(Application $app, string $steamId)
     {
         if (substr(strtolower($steamId), 0, 6) == "steam_") {
             $steamId = $this->idConverter->createFromSteamID(urldecode($steamId));
@@ -51,7 +43,7 @@ class SteamGroupController
            'https://steamcommunity.com/groups/irrel'
         ]);
 
-        return $this->app->json([
+        return $app->json([
             'grantAccess' => $results->shouldGrantAccess(),
             'rejectReason' => $results->getRejectReason()
         ]);
