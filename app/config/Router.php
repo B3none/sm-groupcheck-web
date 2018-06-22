@@ -1,5 +1,7 @@
 <?php
 
+use B3none\Irrel\Controller\GroupCheck\GroupCheckerController;
+
 class Router
 {
     /**
@@ -14,6 +16,6 @@ class Router
 
     public function buildRoutes()
     {
-        $this->app->get('/v1/group-checker/{steamId}', 'B3none\\Irrel\\Controller\\GroupCheck\\GroupCheckerController::check');
+        $this->app->get('/v1/group-checker/{steamId}', GroupCheckerController::class.'::check');
     }
 }
