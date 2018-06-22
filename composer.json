@@ -1,6 +1,6 @@
 {
-    "name": "b3none/irrel-api",
-    "description": "This is the API for Irrel.",
+    "name": "b3none/melon-cartel-api",
+    "description": "This is the API for MelonCartel.",
     "authors": [
         {
             "name": "Alex Blackham",
@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "B3none\\Irrel\\": "src/"
+            "B3none\\MelonCartel\\": "src/"
         }
     },
     "require": {

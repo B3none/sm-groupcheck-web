@@ -6,7 +6,7 @@ $app->error(function (\Exception $e, $code) use ($app) {
     }
 
     if ($app['debug']) {
-        // in debug mode we want to get the regular error message
+        // In debug mode we want to get the regular error message
         return;
     }
 

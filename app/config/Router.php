@@ -1,6 +1,6 @@
 <?php
 
-use B3none\Irrel\Controller\GroupCheck\GroupCheckerController;
+use B3none\MelonCartel\Controller\GroupCheck\GroupCheckerController;
 
 class Router
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace B3none\Irrel\Controller\GroupCheck;
+namespace B3none\MelonCartel\Controller\GroupCheck;
 
 use B3none\SteamGroupChecker\Client as GroupChecker;
 use B3none\SteamIDConverter\Client as IDConverter;
@@ -40,7 +40,7 @@ class GroupCheckerController
         }
 
         $results = $this->groupChecker->detect($steamId, [
-           'https://steamcommunity.com/groups/irrel'
+           'https://steamcommunity.com/groups/meloncartel'
         ]);
 
         return $app->json([
