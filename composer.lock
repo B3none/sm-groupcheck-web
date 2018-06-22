@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d723df68694040bfc75a31b908446ad6",
+    "content-hash": "416fa6e6beee9df3a4da9abb9eddd870",
     "packages": [
         {
             "name": "aptoma/silex-extras",
@@ -75,16 +75,16 @@
         },
         {
             "name": "b3none/steam-group-checker",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b3none/SteamGroupChecker.git",
-                "reference": "46b84699f49293f5d1d069e8691cdf4defbee2b3"
+                "reference": "d6b7ccf43eb34675407094c911d068d9e2f1c9a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b3none/SteamGroupChecker/zipball/46b84699f49293f5d1d069e8691cdf4defbee2b3",
-                "reference": "46b84699f49293f5d1d069e8691cdf4defbee2b3",
+                "url": "https://api.github.com/repos/b3none/SteamGroupChecker/zipball/d6b7ccf43eb34675407094c911d068d9e2f1c9a9",
+                "reference": "d6b7ccf43eb34675407094c911d068d9e2f1c9a9",
                 "shasum": ""
             },
             "type": "library",
@@ -101,20 +101,20 @@
                 }
             ],
             "description": "Check whether a Steam64ID is in your group.",
-            "time": "2018-06-21T20:02:41+00:00"
+            "time": "2018-06-22T11:46:54+00:00"
         },
         {
             "name": "b3none/steam-id-converter",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b3none/SteamIDConverter.git",
-                "reference": "093dced9b8b1e06e20435c588b4fc1447731d797"
+                "reference": "bab72baf32b471231cff5071eeb50782e8ec4114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b3none/SteamIDConverter/zipball/093dced9b8b1e06e20435c588b4fc1447731d797",
-                "reference": "093dced9b8b1e06e20435c588b4fc1447731d797",
+                "url": "https://api.github.com/repos/b3none/SteamIDConverter/zipball/bab72baf32b471231cff5071eeb50782e8ec4114",
+                "reference": "bab72baf32b471231cff5071eeb50782e8ec4114",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                 }
             ],
             "description": "Steam ID Converter",
-            "time": "2018-06-21T00:16:05+00:00"
+            "time": "2018-06-22T11:20:36+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -818,32 +818,33 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v3.4.11",
+            "version": "v2.8.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68"
+                "reference": "fe8838e11cf7dbaf324bd6f51d065d873ccf78a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/b28fd73fefbac341f673f5efd707d539d6a19f68",
-                "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/fe8838e11cf7dbaf324bd6f51d065d873ccf78a2",
+                "reference": "fe8838e11cf7dbaf324bd6f51d065d873ccf78a2",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
+                "php": ">=5.3.9",
                 "psr/log": "~1.0"
             },
             "conflict": {
                 "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "symfony/http-kernel": "~2.8|~3.0|~4.0"
+                "symfony/class-loader": "~2.2|~3.0.0",
+                "symfony/http-kernel": "~2.3.24|~2.5.9|^2.6.2|~3.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -870,7 +871,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T14:03:39+00:00"
+            "time": "2018-05-15T21:17:45+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -1144,44 +1145,46 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v3.0.9",
+            "version": "v2.8.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "d97ba4425e36e79c794e7d14ff36f00f081b37b3"
+                "reference": "b8c0ae53cae5d1ab4d34d8e963e30ccf6bc143df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/d97ba4425e36e79c794e7d14ff36f00f081b37b3",
-                "reference": "d97ba4425e36e79c794e7d14ff36f00f081b37b3",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/b8c0ae53cae5d1ab4d34d8e963e30ccf6bc143df",
+                "reference": "b8c0ae53cae5d1ab4d34d8e963e30ccf6bc143df",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": ">=5.3.9",
                 "psr/log": "~1.0",
-                "symfony/debug": "~2.8|~3.0",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/http-foundation": "~2.8.8|~3.0.8|~3.1.2|~3.2"
+                "symfony/debug": "^2.6.2",
+                "symfony/event-dispatcher": "^2.6.7|~3.0.0",
+                "symfony/http-foundation": "~2.7.36|~2.8.29|~3.1.6",
+                "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
-                "symfony/config": "<2.8"
+                "symfony/config": "<2.7",
+                "twig/twig": "<1.34|<2.4,>=2"
             },
             "require-dev": {
-                "symfony/browser-kit": "~2.8|~3.0",
-                "symfony/class-loader": "~2.8|~3.0",
-                "symfony/config": "~2.8|~3.0",
-                "symfony/console": "~2.8|~3.0",
-                "symfony/css-selector": "~2.8|~3.0",
-                "symfony/dependency-injection": "~2.8|~3.0",
-                "symfony/dom-crawler": "~2.8|~3.0",
-                "symfony/expression-language": "~2.8|~3.0",
-                "symfony/finder": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0",
-                "symfony/routing": "~2.8|~3.0",
-                "symfony/stopwatch": "~2.8|~3.0",
-                "symfony/templating": "~2.8|~3.0",
-                "symfony/translation": "~2.8|~3.0",
-                "symfony/var-dumper": "~2.8|~3.0"
+                "symfony/browser-kit": "~2.3|~3.0.0",
+                "symfony/class-loader": "~2.1|~3.0.0",
+                "symfony/config": "~2.8",
+                "symfony/console": "~2.3|~3.0.0",
+                "symfony/css-selector": "^2.0.5|~3.0.0",
+                "symfony/dependency-injection": "~2.8|~3.0.0",
+                "symfony/dom-crawler": "^2.0.5|~3.0.0",
+                "symfony/expression-language": "~2.4|~3.0.0",
+                "symfony/finder": "^2.0.5|~3.0.0",
+                "symfony/process": "^2.0.5|~3.0.0",
+                "symfony/routing": "~2.8|~3.0.0",
+                "symfony/stopwatch": "~2.3|~3.0.0",
+                "symfony/templating": "~2.2|~3.0.0",
+                "symfony/translation": "^2.0.5|~3.0.0",
+                "symfony/var-dumper": "~2.6|~3.0.0"
             },
             "suggest": {
                 "symfony/browser-kit": "",
@@ -1195,7 +1198,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -1222,30 +1225,33 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-30T09:10:37+00:00"
+            "time": "2018-05-25T12:02:50+00:00"
         },
         {
             "name": "symfony/monolog-bridge",
-            "version": "v2.8.5",
+            "version": "v2.8.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/monolog-bridge.git",
-                "reference": "a61725fb8af61a764602a9ef2aa67e430e93589e"
+                "reference": "964da679f5cacc150409dad4d3a025e48cf812d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/monolog-bridge/zipball/a61725fb8af61a764602a9ef2aa67e430e93589e",
-                "reference": "a61725fb8af61a764602a9ef2aa67e430e93589e",
+                "url": "https://api.github.com/repos/symfony/monolog-bridge/zipball/964da679f5cacc150409dad4d3a025e48cf812d2",
+                "reference": "964da679f5cacc150409dad4d3a025e48cf812d2",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "~1.11",
-                "php": ">=5.3.9"
+                "php": ">=5.3.9",
+                "symfony/http-kernel": "~2.4"
+            },
+            "conflict": {
+                "symfony/http-kernel": ">=3.0"
             },
             "require-dev": {
                 "symfony/console": "~2.4|~3.0.0",
-                "symfony/event-dispatcher": "~2.2|~3.0.0",
-                "symfony/http-kernel": "~2.4"
+                "symfony/event-dispatcher": "~2.2|~3.0.0"
             },
             "suggest": {
                 "symfony/console": "For the possibility to show log messages in console commands depending on verbosity settings. You need version ~2.3 of the console for it.",
@@ -1282,7 +1288,7 @@
             ],
             "description": "Symfony Monolog Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-04-05T16:36:54+00:00"
+            "time": "2018-05-11T15:48:50+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

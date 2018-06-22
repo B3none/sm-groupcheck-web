@@ -20,8 +20,8 @@
         "symfony/browser-kit": "~2.3",
         "symfony/css-selector": "~2.3",
         "guzzlehttp/guzzle": "^6.3",
-        "b3none/steam-group-checker": "^0.0.1",
-        "b3none/steam-id-converter": "^1.0"
+        "b3none/steam-group-checker": "^0.0.2",
+        "b3none/steam-id-converter": "~1.1"
     },
     "minimum-stability": "stable"
 }

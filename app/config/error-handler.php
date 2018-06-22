@@ -2,7 +2,7 @@
 
 $app->error(function (\Exception $e, $code) use ($app) {
     if ($code == 404) {
-        return $app['twig']->render('homepage.twig');
+        return $app->json(['status' => 404, 'message' => $e->getMessage()]);
     }
 
     if ($app['debug']) {
