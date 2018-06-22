@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91f93b96ba81d294608e6922ddc7c230",
+    "content-hash": "8b8b74db3da0ee720dc415722f98c125",
     "packages": [
         {
             "name": "b3none/steam-group-checker",
