@@ -10,7 +10,8 @@ $app = new \Silex\Application([
 ]);
 
 // Map routes to controllers
-require __DIR__ . '/config/routing.php';
+require __DIR__ . '/config/Router.php';
+(new Router($app))->buildRoutes();
 
 // Add error handling.
 require __DIR__ . '/config/error-handler.php';
