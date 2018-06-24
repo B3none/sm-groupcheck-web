@@ -37,6 +37,13 @@ class GroupCheckerController
         if (substr(strtolower($steamId), 0, 6) == "steam_") {
             $steamId = $this->idConverter->createFromSteamID(urldecode($steamId));
             $steamId = $steamId->getSteamID64();
+        } else {
+            if (!(int)$steamId >= 76561197960265728) {
+                return $app->json([
+                    'grantAccess' => false,
+                    'rejectReason' => "None"
+                ]);
+            }
         }
 
         $results = $this->groupChecker->detect($steamId, [
