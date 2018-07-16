@@ -17,5 +17,6 @@ class Router
     public function buildRoutes()
     {
         $this->app->get('/v1/group-checker/{steamId}', GroupCheckerController::class.'::check');
+        $this->app->post('/v1/group-checker/{steamId}', GroupCheckerController::class.'::check');
     }
 }
