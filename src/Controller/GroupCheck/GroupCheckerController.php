@@ -19,11 +19,6 @@ class GroupCheckerController
     protected $idConverter;
 
     /**
-     * @var
-     */
-    protected $cache;
-
-    /**
      * GroupCheckerController constructor.
      */
     public function __construct()
@@ -51,9 +46,6 @@ class GroupCheckerController
             }
         }
 
-        if ($this->cache->hasCache() && $this->cache->isFreshEnough()) {
-
-        }
         $results = $this->groupChecker->detect($steamId, [
            'https://steamcommunity.com/groups/meloncartel'
         ]);
