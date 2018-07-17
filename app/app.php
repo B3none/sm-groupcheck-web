@@ -4,7 +4,7 @@ include(__DIR__ . '/../vendor/autoload.php');
 
 // Initialize Application
 $app = new \Silex\Application([
-    'debug' => true
+    'debug' => $_SERVER['SERVER_NAME'] === 'localhost'
 ]);
 
 // Map routes to controllers
