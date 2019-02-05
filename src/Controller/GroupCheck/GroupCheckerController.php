@@ -1,6 +1,6 @@
 <?php
 
-namespace B3none\MelonCartel\Controller\GroupCheck;
+namespace B3none\GroupCheck\V1\Controller\GroupCheck;
 
 use B3none\SteamGroupChecker\Client as GroupChecker;
 use B3none\SteamIDConverter\Client as IDConverter;
