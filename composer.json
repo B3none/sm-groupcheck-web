@@ -1,15 +1,15 @@
 {
-    "name": "b3none/melon-cartel-api",
-    "description": "This is the API for MelonCartel.",
+    "name": "b3none/sm-groupcheck-web",
+    "description": "This is the API for GroupCheck.",
     "authors": [
         {
-            "name": "Alex Blackham",
+            "name": "B3none",
             "email": "ablackham2000@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "B3none\\MelonCartel\\": "src/"
+            "B3none\\GroupCheck\\": "src/"
         }
     },
     "require": {
