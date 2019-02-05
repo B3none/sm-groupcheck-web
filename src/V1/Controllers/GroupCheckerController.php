@@ -9,6 +9,25 @@ use Silex\Application;
 class GroupCheckerController
 {
     /**
+     * This is the list of blacklisted groups.
+     *
+     * @var array
+     */
+    protected $blacklistedGroups = [
+        'https://steamcommunity.com/groups/pumpisgod'
+    ];
+
+    /**
+     * This is the list of whitelisted groups.
+     *
+     * @var array
+     */
+    protected $whitelistedGroups = [
+        'https://steamcommunity.com/groups/voidrealitygaming',
+        'https://steamcommunity.com/groups/meloncartel'
+    ];
+
+    /**
      * @var GroupChecker
      */
     protected $groupChecker;
@@ -44,9 +63,7 @@ class GroupCheckerController
             ]);
         }
 
-        $results = $this->groupChecker->detect($steamId, [
-           'https://steamcommunity.com/groups/meloncartel'
-        ]);
+        $results = $this->groupChecker->detect($steamId, $this->whitelistedGroups, $this->blacklistedGroups);
 
         return $app->json([
             'grantAccess' => $results->shouldGrantAccess(),
