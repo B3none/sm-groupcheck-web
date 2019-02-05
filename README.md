@@ -1,2 +1,2 @@
-# MelonCartel API
-MelonCartel API
+# SM GroupCheck Web
+SM GroupCheck Web API
