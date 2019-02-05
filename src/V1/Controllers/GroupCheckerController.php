@@ -1,6 +1,6 @@
 <?php
 
-namespace B3none\GroupCheck\V1\Controller\GroupCheck;
+namespace B3none\GroupCheck\V1\Controllers;
 
 use B3none\SteamGroupChecker\Client as GroupChecker;
 use B3none\SteamIDConverter\Client as IDConverter;
@@ -37,13 +37,11 @@ class GroupCheckerController
         if (substr(strtolower($steamId), 0, 6) == "steam_") {
             $steamId = $this->idConverter->createFromSteamID(urldecode($steamId));
             $steamId = $steamId->getSteamID64();
-        } else {
-            if (!(int)$steamId >= 76561197960265728) {
-                return $app->json([
-                    'grantAccess' => false,
-                    'rejectReason' => "None"
-                ]);
-            }
+        } else if (!(int)$steamId >= 76561197960265728) {
+            return $app->json([
+                'grantAccess' => false,
+                'rejectReason' => "None"
+            ]);
         }
 
         $results = $this->groupChecker->detect($steamId, [
