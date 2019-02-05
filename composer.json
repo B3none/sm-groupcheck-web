@@ -3,8 +3,7 @@
     "description": "This is the API for GroupCheck.",
     "authors": [
         {
-            "name": "B3none",
-            "email": "ablackham2000@gmail.com"
+            "name": "B3none"
         }
     ],
     "autoload": {

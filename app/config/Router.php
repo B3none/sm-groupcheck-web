@@ -1,6 +1,6 @@
 <?php
 
-use B3none\MelonCartel\Controller\GroupCheck\GroupCheckerController;
+use B3none\GroupCheck\V1\Controllers\GroupCheckerController;
 
 class Router
 {
@@ -17,6 +17,5 @@ class Router
     public function buildRoutes()
     {
         $this->app->get('/v1/group-checker/{steamId}', GroupCheckerController::class.'::check');
-        $this->app->post('/v1/group-checker/{steamId}', GroupCheckerController::class.'::check');
     }
 }
